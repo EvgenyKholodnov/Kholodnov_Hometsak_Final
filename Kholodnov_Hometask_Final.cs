@@ -47,4 +47,3 @@ int CheckWhetherEverythingIsRight(string text) //Checking whether you are attent
 Console.Write("Type a number of elements in the array: ");
 int i = CheckWhetherEverythingIsRight(Console.ReadLine());
 
-
