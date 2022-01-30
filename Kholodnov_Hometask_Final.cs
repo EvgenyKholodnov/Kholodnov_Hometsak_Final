@@ -14,7 +14,7 @@ Introduction();
 
 int CheckWhetherEverythingIsRight(string text) //Checking whether you are attentive while reading instructions
 {
-    if (text == " ")
+    if (text == "")
     {
         Console.WriteLine("");
         Console.WriteLine("Whoops! Seems like you have not typed anything. Please, try again.");
@@ -23,14 +23,14 @@ int CheckWhetherEverythingIsRight(string text) //Checking whether you are attent
     }
     else if (int.TryParse(text, out int i))
     {
-        if (i > 0)
+        if (i != 0)
         {
             return i;
         }
         else 
         {
             Console.WriteLine("");
-            Console.WriteLine("Nope! The array cannot equal 0. Please, type a number of elements you want to use in the program.");
+            Console.WriteLine("Nope! The program won't work without relevant data. Please, type a number of elements you want to use in the program.");
             var a = Console.ReadLine();
             return CheckWhetherEverythingIsRight(a);
         }
