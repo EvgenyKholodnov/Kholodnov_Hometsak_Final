@@ -44,19 +44,19 @@ int CheckWhetherEverythingIsRight(string text) //Checking whether you are attent
     }
 }
 
-Console.Write("Please, type a number of elements to add to the the array: ");
+Console.Write("Please, type a number of elements to add to the the array: "); // Welcoming users to set a lenght of the array
 int i = CheckWhetherEverythingIsRight(Console.ReadLine());
 
-string[] array = new string[i];
+string[] array = new string[i]; // setting indexes
 string temporary = string.Empty;
 int count = 0;
 int ArrayStarts = 0;
 int ArrayLimitations = 4;
 
 Console.WriteLine("");
-Console.WriteLine("Please, type anything you want: ");
+Console.WriteLine("Please, type anything you want: "); // welcoming users to fill the array
 
-for (int b = 0; b < i; b++)
+for (int b = 0; b < i; b++) // the cycle for checking whether filled words/numbers fit in the tasked range on elements in the array
 {
     Console.Write(b + 1 + ") ");
     temporary = Console.ReadLine();
@@ -67,7 +67,7 @@ for (int b = 0; b < i; b++)
     }
 }
 
-Array.Resize(ref array, count);
+Array.Resize(ref array, count); // the method for resizing the array into the new one in the tasked range of elements in the array
 
 if (array.Length > 0)
 {
