@@ -44,7 +44,7 @@ int CheckWhetherEverythingIsRight(string text) //Checking whether you are attent
     }
 }
 
-Console.Write("Type a number of elements in the array: ");
+Console.Write("Please, type a number of elements to add to the the array: ");
 int i = CheckWhetherEverythingIsRight(Console.ReadLine());
 
 string[] array = new string[i];
@@ -67,3 +67,23 @@ for (int b = 0; b < i; b++)
     }
 }
 
+Array.Resize(ref array, count);
+
+if (array.Length > 0)
+{
+    Console.WriteLine("");
+    Console.WriteLine("Congratulations! You've got your new array! Sorry, but limitations of this program do not allow me showing anything with less than 1 and more than 3 characters.");
+    Console.WriteLine("");
+    for ( int b = 0; b < array.Length; b++)
+    {
+        Console.WriteLine(b + 1 + ") " + array[b]);
+    }
+}
+else
+{
+    Console.WriteLine("");
+    Console.WriteLine("You've reached program limitations. I cannot show anything with less than 1 and more than 3 characters. Please, try running the program again.");
+    Console.WriteLine("");
+}
+
+Console.WriteLine("");
