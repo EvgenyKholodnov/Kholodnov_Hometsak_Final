@@ -47,3 +47,11 @@ int CheckWhetherEverythingIsRight(string text) //Checking whether you are attent
 Console.Write("Type a number of elements in the array: ");
 int i = CheckWhetherEverythingIsRight(Console.ReadLine());
 
+string[] array = new string[i];
+string tempprary = string.Empty;
+int count = 0;
+int ArrayStarts = 0;
+int ArrayLimitations = 4;
+
+Console.WriteLine("");
+Console.WriteLine("Please, type anything you want: ");
